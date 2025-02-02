@@ -8,29 +8,37 @@
   </head>
   <body>
     <div class="profile-card">
-      <img
-        src="./images/Adedayo_selfie.png"
-        alt="Profile Picture"
-        data-testid="profilePicture"
-        class="profile-img"
-      />
-      <h2 data-testid="fullName">Adedayo Adegbola</h2>
-      <p data-testid="jobTitle">Frontend Developer</p>
-      <p data-testid="shortBio">
-        A passionate frontend developer eager to build amazing web experiences.
-      </p>
-      <p data-testid="currentLocation" class="location-block">
-        <span>
-          <img src="./icons/location.png" alt="location" width="24" />
-        </span>
-        Lagos, Nigeria
-      </p>
-      <p data-testid="emailAddress" class="email-block">
-        <span>
-          <img src="./icons/email.png" alt="email" width="32" />
-        </span>
-        Adegboladayor@gmail.com
-      </p>
+      <div class="profile-pic-div">
+        <img
+          src="./images/Adedayo_selfie.png"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+          class="profile-img"
+        />
+      </div>
+      <div class="user-info-div">
+        <div class="user-identity">
+          <h2 data-testid="fullName">Adedayo Adegbola</h2>
+          <p data-testid="jobTitle">Frontend Developer</p>
+        </div>
+        <p data-testid="shortBio" class="bio">
+          A passionate frontend developer eager to build amazing web experiences.
+        </p>
+        <div class="more-details">
+          <div data-testid="currentLocation" class="location-block">
+            <span>
+              <img src="./icons/location.png" alt="location" width="24" />
+            </span>
+            <span>Lagos, Nigeria</span>
+          </div>
+          <div data-testid="emailAddress" class="email-block">
+            <span>
+              <img src="./icons/email.png" alt="email" width="32" />
+            </span>
+            <span>Adegboladayor@gmail.com</span>
+          </div>
+        </div>
+      </div>
       <div data-testid="socialLinks" class="social-links">
         <a href="https://www.linkedin.com/in/adedayo-adegbola-0976a922a">
           <img src="./icons/linkedIn.png" alt="linkedIn" width="32" />
@@ -42,12 +50,12 @@
           <img src="./icons/twitter.png" alt="twitter" width="32" />
         </a>
       </div>
-      <p data-testid="currentTimeUTC" class="time-block">
+      <div data-testid="currentTimeUTC" class="time-block">
         <span>
           <img src="./icons/time.png" alt="time" width="32" />
         </span>
         <span id="utc-time"></span>
-      </p>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>

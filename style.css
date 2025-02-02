@@ -1,5 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +23,9 @@ body {
   text-align: center;
   width: max-content;
   max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .profile-img {
   width: 100px;
@@ -21,14 +33,39 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
-.social-links a {
-  text-decoration: none;
-  color: blue;
-  margin: 0 5px;
+.social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .time-block, .email-block, .location-block {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.user-info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.email-block {
+  margin-top: -5px;
+}
+
+.user-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  > p {
+    color: #716f6f;
+  }
+}
+
+.bio {
+  color: #716f6f;
 }
