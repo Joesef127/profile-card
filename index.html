@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="profile-card">
+      <img src="./images/Adedayo_selfie.png" alt="Profile Picture" data-testid="profilePicture" class="profile-img">
+      <h2 data-testid="fullName">Your Name</h2>
+      <p data-testid="jobTitle">Frontend Developer</p>
+      <p data-testid="shortBio">A passionate frontend developer eager to build amazing web experiences.</p>
+      <p data-testid="currentLocation">Lagos, Nigeria</p>
+      <p data-testid="emailAddress">your.email@example.com</p>
+      <div data-testid="socialLinks" class="social-links">
+        <a href="#">LinkedIn</a> |
+        <a href="#">GitHub</a> |
+        <a href="#">Twitter</a>
+      </div>
+      <p data-testid="currentTimeUTC" id="utc-time"></p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
